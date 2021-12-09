@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(112, 111, 111);
+  
+}
+
+.navbar {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 20px;
+  color: white;
+}
+
+div.navbar-menu {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 15px;
+margin-right: 25px;
+align-items: center;
+}
+
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.main-content {
+
+background-color: rgb(199, 199, 199);
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.title-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h2.section-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.description-text {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-one {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0px;
+  max-width: 340px;
+  height: 400px;
+  border: 1px solid black;
+}
+div.image-container {
+  width: 340px;
+  height: 400px;
+  padding: 1em 1em;
+  border: 1px solid black;
+}
+
+
+/*
+  .about-me-section {
+use--  target in the opening tag of an href to open in a different tab-- as opposed to leaving the current page 
+
+}
+.about-me-text {
+
+}
+.project-section {
+
+}
+.project-description {
+
+}
+.carousel-container {
+
+}
+.contact-me-section {
+
+}
+.col-one {
+
+}
+
+#navbar-burger {
+  display: none;
+}
+
+target--> will open a new tab 
+<a href="mailto:email@example.com">Send Email</a> 
+search for more info 
+
+for linking directly to projects, one option is to link the photos in the portfolio page to the github,
+and then adding the direct link to the bottom of the readme file.. be sure to have a read me for each one of those, and check against what is already provided in the current state of the projects
+
+
+
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(10%);
+  }
+}
+
+h1#heading-text {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(231, 231, 231);
+  animation-name: slidein; 
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+*/
+
