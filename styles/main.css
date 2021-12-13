@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:wght@300&family=Open+Sans:wght@500&display=swap');
 
 body {
   padding: 0px;
   margin: 0px;
-  background-color: rgb(112, 111, 111);
-  
 }
 
 .navbar {
@@ -12,11 +12,29 @@ body {
   flex: row;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(112, 111, 111);
 }
+
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   margin-left: 20px;
   color: white;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 div.navbar-menu {
@@ -34,8 +52,29 @@ align-items: center;
 }
 
 .main-content {
+  background-color: rgb(255, 255, 255);
+}
 
-background-color: rgb(179, 210, 230);
+.title-div {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+}
+
+.about-me-section-one {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 65vw;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.profile-image{
+  height: 160px;
+  object-fit: scale-down;
+  border-radius: 50%;
 }
 
 .about-me-section {
@@ -45,85 +84,267 @@ background-color: rgb(179, 210, 230);
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
-
+  
 }
 
-.title-div {
-  margin-bottom: 25px;
+p.description-text {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.skills-section {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column; 
+  width: 65vw; 
+}
+
+.skills-columns {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-h2.section-title {
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
 }
 
-h3 {
-  
-  margin-left: auto;
-  margin-right: auto;
-
-}
-.description-text {
-  font-family: 'Open Sans', sans-serif;
+#column-one {
+  display: flex;
+  flex-direction: column;
 }
 
-.project-section {
+#column-two {
+  display: flex;
+  flex-direction: column;
+}
+
+#column-three {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-list-container-one {
+  margin: auto;
+  width:65vw;
+  max-width: 800px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.skills-list-container-two {
+  margin: auto;
+  width:65vw;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-title-div {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: -5px;
+  width: 65vw;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-start;
+}
+
+section.project-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px 4px rgb(145, 143, 143);
+}
+
+div.card-one {
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 300px;
+  height: 400px;
+  margin-left: 5px;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.image-container {
+  height: 400px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+
+img.project-image{
+  height: 400px;
+  object-fit: scale-down;
+}
+
+section.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  width: 65vw;
+  max-width: 900px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+div.contact-info-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-items: flex-start;
+}
+
+div.contact-div{
   margin-left: auto;
   margin-right: auto;
 }
-.card-one {
-  margin:auto;
-  padding: 1em 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  max-width: 340px;
-  height: 400px;
-  background-color: rgb(245, 236, 236);
-  border-radius: 5px;
-  
-}
-div.image-container {
-  margin:auto;
-  max-width: 340px;
-  height: 400px;
-  overflow: hidden;
-  
-  
+
+.shout-out-text {
+  font-style: italic;
 }
 
-img.project-image{
-  
-  height: 400px;
-  width: auto;
-  align-self: center;
-  object-fit: cover;
-  
-  
-}
-
-#contact-section {
-  margin-top: 25px;
-
-}
-.contact-div {
+span.contact-item {
   display: flex;
   flex-direction: row;
-  justify-items: flex-start;
-  align-items: center;
+  align-items: baseline;
 }
 
-.description-text-contact {
-  margin-left: 10px;
+div.contact-links-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin:0px;
+  border: 1px solid black;
 }
 
+@keyframes slideHeading{
+  from {
+    transform: translateX(-100%);  
+    opacity: 0;
+  }
+  to {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+}
+
+h1#name-as-heading {
+  font-family: 'Nunito Sans', sans-serif;
+  margin-left: 20px;
+  color: white;
+  animation: slideHeading; 
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+img.profile-image {
+  animation: imageFadeIn;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideAboutSection {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+#about-me {
+  animation: slideAboutSection;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideMyMission{
+  from {
+    opacity: 0;
+    transform: translateX(-450%);  
+    
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+    
+  }
+}
+#my-mission{
+  animation: slideMyMission;
+  animation-duration: 2500ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+@keyframes slideMissionStatement {
+  from {
+    transform: translateX(250%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+#mission-statement {
+  animation: slideMissionStatement;
+  animation-duration: 2500ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideSkills {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+#all-skills-items {
+  animation: slideSkills;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-delay: 0;
+  animation-iteration-count: 1;
+
+}
 
 
 /*
@@ -162,29 +383,5 @@ for linking directly to projects, one option is to link the photos in the portfo
 and then adding the direct link to the bottom of the readme file.. be sure to have a read me for each one of those, and check against what is already provided in the current state of the projects
 
 
-
-
-
-@keyframes slidein {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(10%);
-  }
-}
-
-h1#heading-text {
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(231, 231, 231);
-  animation-name: slidein; 
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
 */
 
