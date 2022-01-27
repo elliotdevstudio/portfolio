@@ -1,21 +1,28 @@
-@keyframes slideHeading {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(10%);
-  }
-}
+const faders = document.querySelectorAll('.fade-in');
 
-h1#name-as-heading {
-  font-family: 'Nunito Sans', sans-serif;
-  margin-left: 20px;
-  color: white;
-  animation: slideHeading; 
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
+            const appearOptions = { 
+                threshold:1
+            };
+
+            const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll) {
+                entries.forEach(entry =>
+                {
+                    if(entry.isIntersecting)
+                    {
+                        entry.target.classList.remove('appear');
+                        entry.target.classList.remove('disappear');
+                        entry.target.classList.add('appear');
+                    }
+                    else
+                    {
+                        entry.target.classList.remove('appear');
+                        entry.target.classList.remove('disappear');
+                        entry.target.classList.add('disappear');
+                    }
+                })
+            },
+            appearOptions); 
+            
+            faders.forEach(fader =>{
+                appearOnScroll.observe(fader);
+            });
