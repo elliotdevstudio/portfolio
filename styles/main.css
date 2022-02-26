@@ -80,7 +80,7 @@ img.profile-image{
 .about-me-section {
   display: flex;
   flex-direction: column;
-  width: 65vw;
+  max-width: 600px;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -94,48 +94,19 @@ p.description-text {
 .skills-section {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column; 
-  width: 65vw; 
+  max-width: 600px; 
 }
 
-.skills-columns {
+.skills-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#column-one {
+.skills-row {
   display: flex;
   flex-direction: column;
-}
-
-#column-two {
-  display: flex;
-  flex-direction: column;
-}
-
-#column-three {
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-list-container-one {
-  margin: auto;
-  width:65vw;
-  max-width: 800px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.skills-list-container-two {
-  margin: auto;
-  width:65vw;
-  max-width: 800px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  align-content: space-between;
 }
 
 .project-title-div {
@@ -149,11 +120,16 @@ p.description-text {
   justify-self: flex-start;
 }
 
+section.project-section{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 div.project-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 65vw;
+  max-width: 600px;
   height: min-content;
   margin-top: 10px;
   margin-bottom: 10px;
