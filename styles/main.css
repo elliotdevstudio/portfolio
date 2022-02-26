@@ -149,11 +149,12 @@ p.description-text {
   justify-self: flex-start;
 }
 
-section.project-section {
+div.project-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 65vw;
+  height: min-content;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: auto;
@@ -164,13 +165,13 @@ section.project-section {
   box-shadow: 0px 6px 6px 4px rgb(145, 143, 143);
 }
 
-div.card-one {
+div.project-description {
   margin:auto;
   display: flex;
   flex-direction: column;
   justify-content: left;
   width: 300px;
-  height: 400px;
+  min-height: 400px;
   margin-left: 5px;
   margin-right: auto;
   padding-left: 10px;
