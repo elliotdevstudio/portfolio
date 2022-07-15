@@ -18,9 +18,10 @@ body {
   
 }
 
-h1 {
+h1.title {
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 20px;
+  color: black;
 }
 
 h2 {
@@ -51,9 +52,9 @@ align-items: center;
 .title {
   color:black;
 }
-.nav-link {
+a.nav-link {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: black;
 }
 
 .main-content {
