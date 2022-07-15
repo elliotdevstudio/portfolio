@@ -12,13 +12,14 @@ body {
   flex: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(112, 111, 111);
+  width: 65vw;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 20px;
-  color: white;
 }
 
 h2 {
@@ -67,6 +68,7 @@ align-items: center;
   flex-direction: row;
   gap: 20px;
   width: 65vw;
+  max-width: 600px;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
