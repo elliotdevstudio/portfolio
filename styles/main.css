@@ -23,12 +23,13 @@ body {
 
 h1.title {
   font-family: 'Nunito Sans', sans-serif;
-  margin-left: 20px;
   color: black;
+  font-size: 30px;
 }
 
 h2 {
   font-family: 'Inter', sans-serif;
+  font-size: 20px;
 }
 
 h3 {
@@ -48,7 +49,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 gap: 15px;
-margin-right: 25px;
+
 align-items: center;
 }
 
@@ -312,7 +313,7 @@ img.profile-image {
 }
 #mission-statement {
   animation: slideMissionStatement;
-  animation-duration: 2000ms;
+  animation-duration: 1500ms;
   animation-timing-function: ease-in-out;
   animation-delay: 0;
   animation-iteration-count: 1;
