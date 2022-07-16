@@ -227,11 +227,11 @@ div.contact-links-container {
 
 @keyframes slideHeading{
   from {
-    transform: translateX(-100%);  
+     
     opacity: 0;
   }
   to {
-    transform: translateX(10%);
+    
     opacity: 1;
   }
 }
