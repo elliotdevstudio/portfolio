@@ -48,7 +48,9 @@ h3.section.title {
   font-family: 'Inter', sans-serif;
   color:rgb(245,245,245);
 }
-
+h3.project-title {
+  color: rgb(121,214,255);
+}
 h4 {
   font-family: 'Inter', sans-serif;
   color:rgb(245,245,245);
