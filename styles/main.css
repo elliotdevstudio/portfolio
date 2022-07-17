@@ -36,6 +36,7 @@ h1.title {
 h2.title {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
+  color:black;
   animation: imageFadeIn;
   animation-duration: 1000ms;
   animation-timing-function: ease-in;
@@ -64,9 +65,7 @@ gap: 15px;
 align-items: center;
 }
 
-.title {
-  color:black;
-}
+
 a.nav-link {
   font-family: 'Open Sans', sans-serif;
   color: black;
@@ -97,6 +96,11 @@ img.profile-image{
   height: 160px;
   object-fit: scale-down;
   border-radius: 50%;
+  animation: imageFadeIn;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
 }
 
 .about-me-section {
