@@ -44,14 +44,18 @@ h2.title {
   animation-iteration-count: 1;
 }
 
-h3 {
+h3.section.title {
   font-family: 'Inter', sans-serif;
+  color:rgb(245,245,245);
 }
 
 h4 {
   font-family: 'Inter', sans-serif;
+  color:rgb(245,245,245);
 }
-
+p {
+  color:rgb(245,245,245);
+}
 a {
   text-decoration: none;
 }
@@ -115,6 +119,7 @@ img.profile-image{
 
 p.description-text {
   font-family: 'Nunito Sans', sans-serif;
+  color: rgb(245,245,245);
 }
 
 .skills-section {
@@ -162,7 +167,7 @@ div.project-card {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 10px;
-  background-color: white;
+  background-color: rgb(36,36,36);
   border-radius: 5px;
   box-shadow: 0px 6px 6px 4px black;
 }
@@ -202,7 +207,6 @@ section.contact-section {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(36,36,36);
   margin-bottom: 50px;
 }
 
@@ -236,7 +240,7 @@ div.contact-links-container {
   border: 1px solid black;
 }
  footer {
-   background-color: rgb(112, 111, 111);
+   color: black;
    height: 90px;
  }
 
@@ -328,6 +332,7 @@ img.profile-image {
   animation-timing-function: ease-out;
   animation-delay: 0;
   animation-iteration-count: 1;
+  color: rgb(245,245,245);
 }
 
 @keyframes slideSkills {
