@@ -240,12 +240,20 @@ h1#name-as-heading {
   font-family: 'Nunito Sans', sans-serif;
   margin-left: 20px;
   color: white;
-  animation: slideHeading; 
-  animation-duration: 750ms;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation: imageFadeIn;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
   animation-delay: 0;
   animation-iteration-count: 1;
   
+}
+
+.navbar-menu {
+  animation: imageFadeIn;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
 }
 @keyframes imageFadeIn {
   from {
@@ -337,6 +345,9 @@ img.profile-image {
 
 }
 
+#mission-statement {
+  margin: none;
+}
 
 /*
   .about-me-section {
