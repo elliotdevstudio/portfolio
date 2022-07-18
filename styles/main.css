@@ -124,6 +124,9 @@ p.description-text {
   color: rgb(245,245,245);
 }
 
+a.description-text-contact{
+  color:rgb(121,214,255);
+}
 .skills-section {
   margin-left: auto;
   margin-right: auto;
@@ -202,7 +205,6 @@ img.project-image{
 section.contact-section {
   display: flex;
   flex-direction: column;
-  justify-items: flex-start;
   width: 65vw;
   max-width: 900px;
   margin-top: 10px;
@@ -220,10 +222,21 @@ div.contact-info-heading {
 }
 
 div.contact-div{
+  display: flex;
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
 }
+div.contact-item {
+height: 20px;
+margin-right: 8px;
+padding-right: 8px;
+border-right:rgb(245,245,245); 
 
+}
+div.contact-item.is-last{
+  border:none;
+}
 .shout-out-text {
   font-style: italic;
 }
@@ -242,7 +255,7 @@ div.contact-links-container {
   border: 1px solid black;
 }
  footer {
-   color: black;
+   background-color: rgb(23, 23, 23); 
    height: 90px;
  }
 
