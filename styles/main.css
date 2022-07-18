@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:wght@300&family=Open+Sans:wght@500&display=swap');
+*{
+  margin:none;
+  padding:none;
+}
 
 body {
   padding: 0px;
@@ -9,21 +13,23 @@ body {
 }
 
 .navbar {
-  margin-top: 25px;
+  
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex: row;
   justify-content: space-between;
-  align-items: center;
   width: 65vw;
   max-width: 600px;
-
-  
 }
+main.main-content {
+  border-bottom: 1px solid black;
+}
+  
+
 
 h1.title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: rgb(245,245,245);
   font-size: 30px;
   animation: imageFadeIn;
@@ -36,6 +42,7 @@ h1.title {
 h2.title {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
+  font-weight: 400;
   color:rgb(245,245,245);
   animation: imageFadeIn;
   animation-duration: 1000ms;
@@ -51,8 +58,14 @@ h3.section.title {
   font-family: 'Inter', sans-serif;
   color:rgb(245,245,245);
 }
+
+h3.tool-box-item {
+  font-size: 16px;
+  font-family: 'Open Sans', 'San Serif';
+  color:rgb(245,245,245);
+}
 h3.project-title {
-  font: Nunito Sans;
+  font-family: 'Open Sans';
   color: rgb(121,214,255);
 }
 h4 {
@@ -126,6 +139,7 @@ img.profile-image{
 p.description-text {
   font-family: 'Nunito Sans', sans-serif;
   color: rgb(245,245,245);
+  margin-top: none;
 }
 
 a.description-text-contact{
@@ -165,6 +179,7 @@ section.project-section{
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 85px;
 }
 div.project-card {
   display: flex;
@@ -210,8 +225,8 @@ img.project-image{
 section.contact-section {
   display: flex;
   flex-direction: column;
-  width: 65vw;
-  margin-top: 10px;
+  width: auto;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -228,7 +243,11 @@ section.contact-section {
 div.footer-content-container{
   display: flex;
   flex-direction: row;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: baseline;
+  object-fit: cover;
   
 }
 div.contact-items-container{
@@ -365,9 +384,6 @@ img.profile-image {
 
 }
 
-#mission-statement {
-  margin: none;
-}
 
 /*
   .about-me-section {
