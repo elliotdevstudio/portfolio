@@ -205,21 +205,19 @@ img.project-image{
 section.contact-section {
   display: flex;
   flex-direction: column;
-  width: 65vw;
-  max-width: 900px;
   margin-top: 10px;
-  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
 }
 
-div.contact-info-heading {
+/*div.contact-info-heading {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-items: flex-start;
 }
+*/
 
 div.contact-div{
   display: flex;
