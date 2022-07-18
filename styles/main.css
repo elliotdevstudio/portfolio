@@ -43,6 +43,9 @@ h2.title {
   animation-delay: 0;
   animation-iteration-count: 1;
 }
+h2.contact-section{
+  margin-right: 1.5em;
+}
 
 h3.section.title {
   font-family: 'Inter', sans-serif;
@@ -126,6 +129,7 @@ p.description-text {
 }
 
 a.description-text-contact{
+  align-self: center;
   color:rgb(121,214,255);
 }
 .skills-section {
@@ -221,33 +225,32 @@ section.contact-section {
 }
 */
 
-div.contact-items-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-div.contact-item {
-display: flex;
-flex-direction: row;
-height: 20px;
-margin-right: 8px;
-padding-right: 8px;
-border-right:rgb(245,245,245); 
-
-}
-div.contact-item.is-last{
-  border:none;
-}
-.shout-out-text {
-  font-style: italic;
-}
-
-span.contact-item {
+div.footer-content-container{
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  
+}
+div.contact-items-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+div.item-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20px;
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right:2px solid rgb(245,245,245); 
+}
+
+.shout-out-text {
+  font-style: italic;
+}
+div.item-container.is-last {
+  border-right: none;
 }
 
 
