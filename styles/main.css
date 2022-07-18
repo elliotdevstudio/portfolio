@@ -49,6 +49,7 @@ h3.section.title {
   color:rgb(245,245,245);
 }
 h3.project-title {
+  font: Nunito Sans;
   color: rgb(121,214,255);
 }
 h4 {
@@ -220,7 +221,7 @@ section.contact-section {
 }
 */
 
-div.contact-div{
+div.contact-items-container{
   display: flex;
   flex-direction: row;
   align-items: center;
