@@ -75,6 +75,7 @@ h4 {
 p {
   color:rgb(245,245,245);
 }
+
 a {
   text-decoration: none;
 }
@@ -83,8 +84,7 @@ div.navbar-menu {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-gap: 15px;
-
+gap:15px;
 align-items: center;
 }
 
@@ -142,7 +142,11 @@ p.description-text {
   margin-top: none;
 }
 
+p.contact-item {
+  font-family: 'Open Sans', 'Sans Serif';
+}
 a.description-text-contact{
+  font-family: 'Nunito Sans', 'San Serif';
   align-self: center;
   color:rgb(121,214,255);
 }
@@ -293,20 +297,13 @@ div.item-container.is-last {
   animation-delay: 0;
   animation-iteration-count: 1;
 }
-@keyframes imageFadeIn {
+/*@keyframes imageFadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
-img.profile-image {
-  animation: imageFadeIn;
-  animation-duration: 900ms;
-  animation-timing-function: ease-in;
-  animation-delay: 0;
-  animation-iteration-count: 1;
 }
 
 @keyframes slideAboutSection {
@@ -319,6 +316,14 @@ img.profile-image {
     opacity: 1;
   }
 }
+*/
+img.profile-image {
+  animation: imageFadeIn;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
 #about-me {
   animation: slideAboutSection;
   animation-duration: 900ms;
@@ -330,12 +335,12 @@ img.profile-image {
 @keyframes slideMyMission{
   from {
     opacity: 0;
-    transform: translateX(-450%);  
+     
     
   }
   to {
     opacity: 1;
-    transform: translateX(0%);
+    
     
   }
 }
@@ -346,6 +351,7 @@ img.profile-image {
   animation-delay: 0;
   animation-iteration-count: 1;
 }
+
 @keyframes slideMissionStatement {
   from {
     transform: translateX(450%);
@@ -356,10 +362,10 @@ img.profile-image {
     opacity: 1;
   }
 }
-#mission-statement {
+.mission-statement {
   animation: slideMissionStatement;
   animation-duration: 1250ms;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
   animation-delay: 0;
   animation-iteration-count: 1;
   color: rgb(245,245,245);
