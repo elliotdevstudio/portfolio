@@ -59,9 +59,9 @@ h3.section.title {
   color:rgb(245,245,245);
 }
 
-h3.tool-box-item {
+.tool-box-item {
   font-size: 16px;
-  font-family: 'Open Sans', 'San Serif';
+  font-family: 'Nunito Sans', 'San Serif';
   color:rgb(245,245,245);
 }
 h3.project-title {
