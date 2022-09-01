@@ -1,3 +1,3 @@
 # portfolio
 
-This is a static webpage with my introduction as a developer, deployed here on Github pages
+This page uses some free-hand responsive css (using keyframe animations) particular to the elements and content 
