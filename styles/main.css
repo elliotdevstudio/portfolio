@@ -226,7 +226,7 @@ div.project-description {
   flex-direction: column;
   justify-content: left;
   width: 50%;
-  min-height: 400px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
