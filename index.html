@@ -8,7 +8,7 @@
   <meta name="description" content="Portfolio Webpage" />
 <meta name="title" property="og:title" content="Elliot Harrison Portfolio" />
 <meta property="og:type" content="Webpage" />
-<meta name="image" property="og:image" content="https://live.staticflickr.com/65535/52222060482_3b45efa259_h.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> />
+<meta name="image" property="og:image" content="https://live.staticflickr.com/65535/52222060482_3b45efa259_h.jpg"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> 
 <meta name="description" property="og:description" content="Portfolio" /><meta name="author" content="Elliot Harrison" />
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
@@ -23,15 +23,17 @@
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
- <nav class="navbar">
-  <h1 class="title fade-in">Elliot Harrison</h1>
-  <div class="navbar-menu">
-    
-    <span><a class="nav-link fade-in" href="https://drive.google.com/file/d/1PZYWxTevolOXz3-BJ_SMv1JZ1gUwkRG6/view?usp=sharing" target="blank">Resume</a></span>
-    <span><a class="nav-link fade-in" href="contact.html" >Contact</a>
-    
-    <!-- <i class="fas fa-navar-burger" id="navbar-burger"></i>-->
-  </div>
+  <nav class="navbar">
+    <div class="navbar-contents-wrapper">
+      
+        <h1 class="name-title fade-in">Elliot Harrison</h1>
+     
+      <div class="navbar-links">
+        <span><a class="nav-link fade-in" href="https://drive.google.com/file/d/1PZYWxTevolOXz3-BJ_SMv1JZ1gUwkRG6/view?usp=sharing" target="blank">Resume</a></span>
+        <span><a class="nav-link fade-in" href="contact.html" >Contact</a></span>
+        <!-- <i class="fas fa-navar-burger" id="navbar-burger"></i>-->
+      </div>
+    </div>
   </nav>
   <main class="main-content">
     </br>
@@ -43,7 +45,7 @@
       <p class="description-text" id="about-me">Hello there! I'm Elliot, an Arkansas transplant living and working in the San Francisco Bay Area for the last eleven years as an artist, entrepreneur, and now as a software developer. 
       </p>
     </section> -->
-    <section class="about-me-section">
+    <section class="about-me-section-one">
       <div class="title-div">
         <h2 class="title" id="my-mission">SUMMARY</h2>
       </div>
@@ -58,24 +60,24 @@
     </br>
     </br>
 
-    <section class="skills-section" id="all-skills-items">
+    <section class="skills-section">
       <div class="title-div">
         <h2 class="title">TOOL BOX</h2>
       </div>
       <div class="skills-container">
-        <div class="skills-row">
+        <div class="skills-column">
           <h3 class="tool-box-item">+ HTML5</h3>
           <h3 class="tool-box-item">+ CSS</h3>
           <h3 class="tool-box-item">+ Node.js</h3>
           <h3 class="tool-box-item">+ Django</h3>
         </div>
-        <div class="skills-row">
+        <div class="skills-column">
           <h3 class="tool-box-item">+ Javascript</h3>
           <h3 class="tool-box-item">+ PostgreSQL</h3>
           <h3 class="tool-box-item">+ Python3</h3>
           <h3 class="tool-box-item">+ Github</h3>
         </div>
-        <div class="skills-row">
+        <div class="skills-column">
           <h3 class="tool-box-item">+ MongoDB</h3>
           <h3 class="tool-box-item">+ Express</h3>
           <h3 class="tool-box-item">+ React.js</h3>
@@ -91,7 +93,7 @@
    
     
     <section class="project-section">
-      <div class="title-div fade-in">
+      <div class="title-div">
         <h2 class="title">PROJECTS</h2>
       </div>
 
@@ -122,10 +124,8 @@
     
     </section>
   </main>
-    <section class="contact-section">
-      <div class="footer-content-container">
-        
-        <div class="contact-items-container">
+    <section class="contact-section">    
+      <div class="contact-items-container">
           <div class="item-container">
             <p class="contact-item"><strong>Email:</strong>&nbsp;elliotdevstudio@gmail.com</p>
           </div>
@@ -133,7 +133,7 @@
             <p class="contact-item"><strong>LinkedIn:</strong>&nbsp;</p><a class="description-text-contact" href="https://www.linkedin.com/in/harrisonelliot/">linkedin.com/in/harrisonelliot</a>
           </div>
           <div class="item-container is-last">
-            <p class="contact-item"><strong>Github:</strong>&nbsp;</p><a class="description-text-contact" href="https://github.com/elliotdevstudio">github.com/elliotdevstudio</a>
+            <p class=""><strong>Github:</strong>&nbsp;</p><a class="description-text-contact" href="https://github.com/elliotdevstudio">github.com/elliotdevstudio</a>
           </div>
       </div>
     </section>

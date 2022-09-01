@@ -12,26 +12,25 @@ body {
   background-color: rgb(23,23,23);
 }
 
-.navbar {
-  
+.navbar-contents-wrapper {
+  margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   width: 65vw;
   max-width: 600px;
-}
-main.main-content {
-  border-bottom: 1px solid black;
-}
-  
 
+}
 
-h1.title {
+h1.name-title {
+
   font-family: 'Open Sans', sans-serif;
   color: rgb(245,245,245);
   font-size: 30px;
+  margin-bottom: 0px;
   animation: imageFadeIn;
   animation-duration: 450ms;
   animation-timing-function: ease-in;
@@ -50,6 +49,7 @@ h2.title {
   animation-delay: 0;
   animation-iteration-count: 1;
 }
+
 h2.contact-section{
   margin-right: 1.5em;
 }
@@ -59,19 +59,13 @@ h3.section.title {
   color:rgb(245,245,245);
 }
 
-.tool-box-item {
-  font-size: 16px;
-  font-family: 'Nunito Sans', 'San Serif';
-  color:rgb(245,245,245);
-}
-h3.project-title {
-  font-family: 'Open Sans';
-  color: rgb(121,214,255);
-}
+
+
 h4 {
   font-family: 'Inter', sans-serif;
   color:rgb(245,245,245);
 }
+
 p {
   color:rgb(245,245,245);
 }
@@ -80,22 +74,24 @@ a {
   text-decoration: none;
 }
 
-div.navbar-menu {
+div.navbar-links {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 gap:15px;
-align-items: center;
+margin-bottom: 4px;
 }
 
 
 a.nav-link {
   font-family: 'Open Sans', sans-serif;
   color:rgb(245,245,245);
+  
 }
 
 .main-content {
   background-color: rgb(23, 23, 23);
+  border-bottom: 1px solid black;
 }
 
 .title-div {
@@ -107,7 +103,7 @@ a.nav-link {
 
 .about-me-section-one {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   width: 65vw;
   max-width: 600px;
@@ -115,6 +111,7 @@ a.nav-link {
   margin-left: auto;
   margin-right: auto;
 }
+
 img.profile-image{
   height: 160px;
   object-fit: scale-down;
@@ -133,13 +130,13 @@ img.profile-image{
   margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 p.description-text {
   font-family: 'Nunito Sans', sans-serif;
   color: rgb(245,245,245);
   margin-top: none;
+  
 }
 
 p.contact-item {
@@ -150,10 +147,28 @@ a.description-text-contact{
   align-self: center;
   color:rgb(121,214,255);
 }
+
+.tool-box-item {
+  font-size: 16px;
+  font-family: 'Nunito Sans', 'San Serif';
+  color:rgb(245,245,245);
+}
+
+h3.project-title {
+  font-family: 'Open Sans';
+  color: rgb(121,214,255);
+}
+
 .skills-section {
   margin-left: auto;
   margin-right: auto;
+  width: 65vw;
   max-width: 600px; 
+  animation: slideSkills;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-delay: 0;
+  animation-iteration-count: 1;
 }
 
 .skills-container {
@@ -162,7 +177,7 @@ a.description-text-contact{
   justify-content: space-between;
 }
 
-.skills-row {
+.skills-column {
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -180,6 +195,9 @@ a.description-text-contact{
 }
 
 section.project-section{
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -189,6 +207,7 @@ div.project-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 65vw;
   max-width: 600px;
   height: min-content;
   margin-top: 10px;
@@ -206,9 +225,9 @@ div.project-description {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 300px;
+  width: 50%;
   min-height: 400px;
-  margin-left: 5px;
+  margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -216,6 +235,7 @@ div.project-description {
 
 div.image-container {
   height: 400px;
+  width: auto;
   max-width: 400px;
   overflow: hidden;
 }
@@ -251,12 +271,18 @@ div.footer-content-container{
   margin-left: auto;
   margin-right: auto;
   align-items: baseline;
-  object-fit: cover;
+  
   
 }
 div.contact-items-container{
+  width: 65vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 div.item-container{
@@ -266,7 +292,7 @@ div.item-container{
   height: 20px;
   margin-right: 8px;
   padding-right: 8px;
-  border-right:2px solid rgb(245,245,245); 
+  
 }
 
 .shout-out-text {
@@ -316,14 +342,15 @@ div.item-container.is-last {
     opacity: 1;
   }
 }
-*/
+
 img.profile-image {
   animation: imageFadeIn;
   animation-duration: 900ms;
   animation-timing-function: ease-in;
   animation-delay: 0;
   animation-iteration-count: 1;
-}
+} */
+
 #about-me {
   animation: slideAboutSection;
   animation-duration: 900ms;
@@ -334,15 +361,12 @@ img.profile-image {
 
 @keyframes slideMyMission{
   from {
-    opacity: 0;
-     
-    
+    opacity: 0; 
   }
   to {
-    opacity: 1;
-    
-    
+    opacity: 1; 
   }
+
 }
 #my-mission{
   animation: slideMyMission;
@@ -381,44 +405,57 @@ img.profile-image {
     
   }
 }
-#all-skills-items {
-  animation: slideSkills;
-  animation-duration: 2000ms;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-delay: 0;
-  animation-iteration-count: 1;
-
+@media (max-width:640px) {
+  .main-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar-contents-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  div.project-card {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65vw;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  div.project-description {
+    justify-self: flex-start;
+    width: auto;
+    margin-left: 0px;
+    margin-right:
+  }
+  
+  p.description-text{
+    width: auto;
+  }
+  
 }
 
-
-/*
-  .about-me-section {
-use--  target in the opening tag of an href to open in a different tab-- as opposed to leaving the current page 
-
+@media (min-width: 900px) {
+  div.contact-items-container {
+    flex-direction: row;
+    
+  }
+  .item-container{
+    border-right:2px solid rgb(245,245,245);
 }
-.about-me-text {
 
-}
-.project-section {
-
-}
-.project-description {
-
-}
-.carousel-container {
-
-}
-.contact-me-section {
-
-}
-.col-one {
-
-}
 
 #navbar-burger {
   display: none;
 }
-
+}
+/*
 target--> will open a new tab 
 <a href="mailto:email@example.com">Send Email</a> 
 search for more info 
@@ -426,6 +463,6 @@ search for more info
 for linking directly to projects, one option is to link the photos in the portfolio page to the github,
 and then adding the direct link to the bottom of the readme file.. be sure to have a read me for each one of those, and check against what is already provided in the current state of the projects
 
-
 */
+
 
