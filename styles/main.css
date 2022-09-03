@@ -32,7 +32,7 @@ h1.name-title {
   color: rgb(245,245,245);
   font-size: 30px;
   margin-bottom: 0px;
-  animation: imageFadeIn;
+  animation: fadeInHeading;
   animation-duration: 450ms;
   animation-timing-function: ease-in;
   animation-delay: 0;
@@ -44,7 +44,7 @@ h2.title {
   font-size: 20px;
   font-weight: 400;
   color:rgb(245,245,245);
-  animation: imageFadeIn;
+  animation: fadeInHeading;
   animation-duration: 1000ms;
   animation-timing-function: ease-in;
   animation-delay: 0;
@@ -76,17 +76,23 @@ a {
 }
 
 div.navbar-links {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-gap:15px;
-margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:15px;
+  margin-bottom: 4px;
+  animation: fadeInHeading;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
 }
 
 
 a.nav-link {
   font-family: 'Open Sans', sans-serif;
   color:rgb(245,245,245);
+  
   
 }
 
@@ -112,17 +118,6 @@ a.nav-link {
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
-}
-
-img.profile-image{
-  height: 160px;
-  object-fit: scale-down;
-  border-radius: 50%;
-  animation: imageFadeIn;
-  animation-duration: 450ms;
-  animation-timing-function: ease-in;
-  animation-delay: 0;
-  animation-iteration-count: 1;
 }
 
 .about-me-section {
@@ -321,7 +316,7 @@ div.item-container.is-last {
 }
 
 .navbar-menu {
-  animation: imageFadeIn;
+  animation: fadeInHeading;
   animation-duration: 450ms;
   animation-timing-function: ease-in;
   animation-delay: 0;
@@ -336,7 +331,7 @@ div.item-container.is-last {
   animation-iteration-count: 1;
 }
 
-@keyframes slideMyMission{
+@keyframes fadeInHeading{
   from {
     opacity: 0; 
   }
@@ -346,7 +341,7 @@ div.item-container.is-last {
 
 }
 #my-mission{
-  animation: slideMyMission;
+  animation: fadeInHeading;
   animation-duration: 1250ms;
   animation-timing-function: ease-in-out;
   animation-delay: 0;
