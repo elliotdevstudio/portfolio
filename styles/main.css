@@ -4,6 +4,7 @@
 *{
   margin:none;
   padding:none;
+  box-sizing: border-box;
 }
 
 body {
@@ -97,8 +98,9 @@ a.nav-link {
 .title-div {
   margin-bottom: 10px;
   display: flex;
-  flex-direction: row;
-  justify-self: flex-start;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 .about-me-section-one {
@@ -135,7 +137,9 @@ img.profile-image{
 p.description-text {
   font-family: 'Nunito Sans', sans-serif;
   color: rgb(245,245,245);
-  margin-top: none;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  text-overflow: '';
   
 }
 
@@ -157,6 +161,12 @@ a.description-text-contact{
 h3.project-title {
   font-family: 'Open Sans';
   color: rgb(121,214,255);
+  align-self: flex-start;
+  margin-top: 0px;
+}
+
+a {
+  color:rgb(121,214,255);
 }
 
 .skills-section {
@@ -187,7 +197,6 @@ h3.project-title {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: -5px;
   width: 65vw;
   display: flex;
   flex-direction: row;
@@ -206,18 +215,24 @@ section.project-section{
 div.project-card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 1em;
   width: 65vw;
   max-width: 600px;
   height: min-content;
+  padding: 1em;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 10px;
   background-color: rgb(36,36,36);
   border-radius: 5px;
   box-shadow: 0px 6px 6px 4px black;
+}
+.project-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+  margin-top: 0px;
 }
 
 div.project-description {
@@ -229,8 +244,7 @@ div.project-description {
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: none;
 }
 
 div.image-container {
@@ -238,6 +252,7 @@ div.image-container {
   width: auto;
   max-width: 400px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 
@@ -256,14 +271,6 @@ section.contact-section {
   margin-bottom: 50px;
 }
 
-/*div.contact-info-heading {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-items: flex-start;
-}
-*/
-
 div.footer-content-container{
   display: flex;
   flex-direction: row;
@@ -271,7 +278,6 @@ div.footer-content-container{
   margin-left: auto;
   margin-right: auto;
   align-items: baseline;
-  
   
 }
 div.contact-items-container{
@@ -302,8 +308,6 @@ div.item-container.is-last {
   border-right: none;
 }
 
-
-
 @keyframes slideHeading{
   from {
      
@@ -315,7 +319,6 @@ div.item-container.is-last {
   }
 }
 
-
 .navbar-menu {
   animation: imageFadeIn;
   animation-duration: 450ms;
@@ -323,33 +326,6 @@ div.item-container.is-last {
   animation-delay: 0;
   animation-iteration-count: 1;
 }
-/*@keyframes imageFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideAboutSection {
-  from {
-    transform: translateX(150%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-img.profile-image {
-  animation: imageFadeIn;
-  animation-duration: 900ms;
-  animation-timing-function: ease-in;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-} */
 
 #about-me {
   animation: slideAboutSection;
@@ -422,22 +398,44 @@ img.profile-image {
   div.project-card {
     flex-direction: column;
     flex-wrap: wrap;
-    width: 65vw;
-    padding-right: 5px;
+    padding: 1em;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
   }
+
   div.project-description {
-    justify-self: flex-start;
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: fit-content;
     margin-left: 0px;
-    margin-right:
+    margin-right:0px;
+  }
+  div.project-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
   }
   
   p.description-text{
-    width: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+
   }
+  div.image-container {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  img.project-image {
+    height: 400px;
+    object-fit: scale-down;
+}
   
 }
 
@@ -455,14 +453,6 @@ img.profile-image {
   display: none;
 }
 }
-/*
-target--> will open a new tab 
-<a href="mailto:email@example.com">Send Email</a> 
-search for more info 
 
-for linking directly to projects, one option is to link the photos in the portfolio page to the github,
-and then adding the direct link to the bottom of the readme file.. be sure to have a read me for each one of those, and check against what is already provided in the current state of the projects
-
-*/
 
 
