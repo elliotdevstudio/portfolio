@@ -88,8 +88,9 @@ div.navbar-links {
   animation-delay: 0;
   animation-iteration-count: 1;
 }
-
-
+nav.navbar {
+  padding-bottom: 12px;
+}
 a.nav-link {
   font-family: 'Open Sans', sans-serif;
   color:rgb(245,245,245);
@@ -98,7 +99,7 @@ a.nav-link {
 }
 
 .main-content {
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(28, 34, 42);
   border-bottom: 1px solid black;
 }
 
@@ -212,10 +213,10 @@ div.project-card {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  box-sizing: border-box;
   gap: 1em;
   width: 65vw;
   max-width: 600px;
-  height: min-content;
   padding: 1em;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -243,18 +244,23 @@ div.project-description {
   padding: none;
 }
 
-div.image-container {
-  height: 400px;
-  width: auto;
+.image-container {
+  height: auto;
+  width: 250px;
   max-width: 400px;
+  max-height: 800px;
+  object-fit: scale-down;
   overflow: hidden;
-  object-fit: cover;
+  
 }
 
 
-img.project-image{
-  height: 400px;
+.project-image{
+  width: 250px;
+  height: auto;
+  overflow: hidden;
   object-fit: scale-down;
+  object-position: left top;
 }
 
 section.contact-section {
@@ -387,6 +393,7 @@ div.item-container.is-last {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   .skills-container {
     display: flex;
     flex-direction: column;
@@ -399,6 +406,9 @@ div.item-container.is-last {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+  }
+  section.project-section {
+    padding-bottom: 0px;
   }
 
   div.project-description {
@@ -423,15 +433,22 @@ div.item-container.is-last {
 
   }
   div.image-container {
-    height: 400px;
     width: 100%;
+    height: auto;
+    max-height: 496px;
+    justify-items: center;
     object-fit: cover;
-    margin-right: auto;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
   }
   img.project-image {
-    height: 400px;
+    align-self: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
     object-fit: scale-down;
+    object-position: center top;
 }
   
 }
