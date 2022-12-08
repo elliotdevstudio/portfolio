@@ -102,7 +102,6 @@ a.nav-link {
 
 .main-content {
   background-color: rgb(28, 34, 42);
-  border-bottom: 1px solid black;
 }
 
 .title-div {
@@ -213,15 +212,16 @@ section.project-section{
 }
 div.project-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   box-sizing: border-box;
+  padding: 0px;
   gap: 1em;
   width: 65vw;
   max-width: 600px;
+  /*border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  /*border-radius: 5px;
   padding: 1em;
   background-color: rgb(36,36,36);
   box-shadow: 0px 6px 6px 4px black;*/
@@ -239,7 +239,6 @@ div.project-description {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 50%;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -248,20 +247,18 @@ div.project-description {
 
 .image-container {
   height: auto;
-  width: 250px;
-  max-width: 400px;
+  width: 100%;
+  max-width: 1000px;
   max-height: 550px;
-  object-fit: scale-down;
-  overflow: hidden;
+  object-fit: contain;
+  overflow: scroll;
   
 }
 
-
 .project-image{
-  width: 250px;
+  width: 100%;
   height: auto;
   overflow: hidden;
-  object-fit: scale-down;
   object-position: left top;
 }
 
@@ -269,6 +266,7 @@ footer.contact-section {
   display: flex;
   flex-direction: column;
   width: auto;
+  height: 15vh;
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -312,6 +310,9 @@ div.item-container{
 }
 div.item-container.is-last {
   border-right: none;
+}
+.scroll {
+  overflow:scroll;
 }
 
 @keyframes slideHeading{
@@ -386,12 +387,12 @@ div.item-container.is-last {
     opacity: 1;
     
   }
+  
 }
-@media (max-width:640px) {
-  .main-content{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
+
+@media (max-width:550px) {
+  
   .navbar-contents-wrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -402,74 +403,18 @@ div.item-container.is-last {
     flex-direction: column;
     align-content: space-between;
   }
-  div.project-card {
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-  }
-  section.project-section {
-    padding-bottom: 0px;
-  }
-
-  div.project-description {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    width: fit-content;
-    margin-left: 0px;
-    margin-right:0px;
-  }
-  div.project-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px;
-  }
   
-  p.description-text{
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    white-space: normal;
-
-  }
-  div.image-container {
-    width: 100%;
-    height: auto;
-    max-height: 496px;
-    justify-items: center;
-    object-fit: cover;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  img.project-image {
-    align-self: center;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    object-fit: scale-down;
-    object-position: center top;
-}
   
 }
-
-@media (min-width: 900px) {
+@media (min-width:820px) {
   div.contact-items-container {
     flex-direction: row;
-    
-  }
-  .item-container{
-    border-right:2px solid rgb(245,245,245);
-  }
+    margin: auto;
+    justify-content: space-around;
 
-
-  #navbar-burger {
-  display: none;
   }
 }
+ 
 
 
 
