@@ -351,7 +351,7 @@ div.item-container.is-last {
   }
 
 }
-#my-mission{
+#my-mission, #navbar-wrapper {
   animation: fadeInHeading;
   animation-duration: 1250ms;
   animation-timing-function: cubic-bezier(.4,0,.2,1);
@@ -361,7 +361,7 @@ div.item-container.is-last {
 
 @keyframes slideMissionStatement {
   from {
-    transform: translateX(450%);
+    transform: translateX(25%);
     opacity: 0;
   }
   to {
@@ -369,6 +369,7 @@ div.item-container.is-last {
     opacity: 1;
   }
 }
+
 .mission-statement {
   animation: slideMissionStatement;
   animation-duration: 1250ms;
