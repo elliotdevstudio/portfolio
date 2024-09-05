@@ -217,7 +217,7 @@ div.project-card {
   box-sizing: border-box;
   padding: 0px;
   gap: 1em;
-  width: 65vw;
+  width: auto;
   max-width: 600px;
   /*border-radius: 5px;
   margin-top: 10px;
@@ -285,7 +285,7 @@ div.footer-content-container{
   
 }
 div.contact-items-container{
-  width: 65vw;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
