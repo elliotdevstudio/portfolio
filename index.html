@@ -29,7 +29,7 @@
         <h1 class="name-title fade-in">Elliot Harrison</h1>
      
       <div class="navbar-links">
-        <span><a class="nav-link fade-in" href="https://drive.google.com/file/d/1zH0Ev_Pw-DxPBzLZ1mcesMPZKxSOAimR/view?usp=sharing" target="blank">Resume</a></span>
+        <span><a class="nav-link fade-in" href="https://drive.google.com/file/d/1WNl1nE8CJrbwDvZxdPxTuKDBSy1aoal1/view?usp=sharing" target="blank">Resume</a></span>
         <span><a class="nav-link fade-in" href="contact.html" >Contact</a></span>
 
         <!-- <i **FOR NAVBAR BURGER "></i>-->
@@ -43,7 +43,7 @@
       <div class="title-div">
         <h2 class="title" id="my-mission">SUMMARY</h2>
       </div>
-        <p class="description-text mission-statement">I’m a full-stack software engineer who is driven to find more efficient ways to solve day-to-day problems in life through programming. My approach to this work stems from a varied background that includes fine arts, precision carpentry, many years of customer service, and the relentless challenges of restaurant entrepreneurship. Through these experiences, I’ve grown into a strong collaborator and problem solver who is ready to provide full support and a unique perspective to a development team.
+        <p class="description-text mission-statement">Full-stack software engineer specializing in React and Next.js ecosystems with hands-on experience building production-grade SaaS applications. Proficient in architecting complex data relationships, implementing server-side rendering strategies, and optimizing performance through strategic state management patterns. Strong focus on writing maintainable TypeScript code, designing scalable MongoDB schemas with bidirectional relationships, and implementing CI/CD pipelines for automated deployment and maintenance. Experienced in translating business requirements into technical solutions that prioritize performance, cost efficiency, and code maintainability.
       </p>
     </section>
 
@@ -59,7 +59,7 @@
       <div class="skills-container">
         <div class="skills-column">
           <h3 class="tool-box-item">+ HTML5</h3>
-          <h3 class="tool-box-item">+ SCSS</h3>
+          <h3 class="tool-box-item">+ CSS</h3>
           <h3 class="tool-box-item">+ Typescript</h3>
           <h3 class="tool-box-item">+ Django</h3>
         </div>
@@ -72,7 +72,7 @@
         <div class="skills-column">
           <h3 class="tool-box-item">+ MongoDB</h3>
           <h3 class="tool-box-item">+ Express</h3>
-          <h3 class="tool-box-item">+ React</h3>
+          <h3 class="tool-box-item">+ Next.js</h3>
           <h3 class="tool-box-item">+ CD/CI</h3>
         </div>
       </div>
@@ -88,6 +88,27 @@
       </div>    
       </br>
       </br>
+      <div class="project-card fade-in">
+        <div class="project-description">
+          <div title="project-title-container">
+            <h3 class="project-title"><a href= https://getgrat.com target="_blank">GRAT&nbsp;-&nbsp;restaurant tip distribution system</a></h3>
+          </div>
+          <div class="project-description-container">
+            <p class="description-text">Full-stack SaaS application built with Next.js 15 (App Router), TypeScript, and MongoDB Atlas that automates complex tip pooling calculations for restaurants with multi-tier gratuity distribution. Architected bidirectional data relationships between staff groups using atomic state management (Jotai), implemented server-side calculation logic for percentage-based and pooled tip distribution across multiple recipient tiers, and designed a 90-day rolling data retention system with automated CI/CD maintenance via GitHub Actions. Features include aggregated shift analytics with flexible date range filtering, CSV export functionality, and a responsive UI built with Tailwind CSS. Deployed on Vercel with production-ready error handling, environment-based configuration, and daily automated shift generation.
+            </br>
+            </br>
+            <strong>Technologies used:&nbsp;&nbsp;</strong>Next.js(App router), Tailwind, Typescript, Jotai state management, Github Actions, MongoDB Atlas</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="project-image scroll" src="assets/images/grat-demo-image.png"/>
+        </div>
+      </div>
+      </br>
+      </br>
+      <hr style="width:100%; height:.5px; background-color:#c7c7c7"> 
+      </br>
+      </br> 
       <div class="project-card fade-in">
         <div class="project-description">
           <div title="project-title-container">
@@ -112,83 +133,47 @@
       <div class="project-card fade-in">
         <div class="project-description">
           <div title="project-title-container">
-            <h3 class="project-title"><a href=https://github.com/elliotdevstudio/React-Tip-Sharing-App" target="_blank">'Square' feature&nbsp;-&nbsp;  payroll reporting</a></h3>
-          </div>
-          <div class="project-description-container">
-          <p class="description-text">This is a passion project currently in development, and was inspired by one of the difficulties I faced while running a restaurant. My objective is to create an additional feature for the 'Square' point-of-sale software using React and Recoil for state management, closely modeling the UX/UI that has contributed to its widespread popularity and with which I am highly familiar. It aims to solve a common problem for restaurant managers faced with the responsibility of distributing gratuities among different staff members who all contribute to the collective effort of providing great customer service. A CI/CD pipeline will be integrated at the time of deployment to enable a user to test the application in real-time. The image below is intended as a visual reference for the finalized iteration.  
-          </br>
-          </br>
-          <strong>Technologies used:&nbsp;&nbsp;</strong>React.js, HTML, Tailwind, JSON</p>
-        </div>
-      </div>
-      <div class="image-container no-scroll">
-        <img class="project-image" src="assets/images/square_pos_2.png"/>
-      </div>
-    </div>
-    </br>
-    </br>
-    <hr style="width:100%; height:.5px; background-color:#c7c7c7"> 
-    </br>
-    </br> 
-      <div class="project-card fade-in">
-        <div class="project-description">
-          <div title="project-title-container">
             <h3 class="project-title"><a href=https://earnest-kheer-7d6043.netlify.app/ target="_blank">FIG TREE&nbsp;-&nbsp;a hackathon project</a></h3>
           </div>
           <div class="project-description-container">
-            <p class="description-text">This collaborative hackathon was hosted by General Assembly in May 2023, with a theme of 'Digital Equity and Accessiblity'. Our team of two developers and two UX/UI designers determined that the ubiquity and affordability of mobile smart devices opened some ground for exploring ideas, and with guidance of publicly available peer-reviewed research we concluded that our product should aim to assist individuals facing significant economic or housing challenges. To effectively manage the extensive range of desired components and functionalities, we focused on developing a minimum viable product (MVP) that included user authorization, a basic profile screen allowing users to create personal profiles, and a landing page featuring publicly accessible routes to various resources generated during our brainstorming sessions. For a few other additional endpoints that fell outside the scope of our project, we created mock-ups for presentation purposes, incorporating user interactions such as drop-down menus and basic animations. Our team was one of the smallest groups, after half of the initial participants needed to disengage. This was a great experience that challenged us on a professional level.</br></br>
-            <strong>Technologies used:&nbsp;&nbsp;</strong>Express.js, React.js, MongoDB, Netlify, CSS modules, HTML</p>
-          </div>
-        </div>
-        <div class="image-container no-scroll">
-          <img class="project-image" src="assets/images/Figtree-1.png"/>
-          <img class="project-image" src="assets/images/Figtree-login.png"/>
-          <img class="project-image" src="assets/images/Figtree-map.png"/>
-        </div>
-      </div>
-      </br>
-      </br>
-      <hr style="width:100%; height:.5px; background-color:#c7c7c7"> 
-      </br>
-      </br> 
-      
-      <div class="project-card fade-in">
-        <div class="project-description">
-          <div title="project-title-container">
-            <h3 class="project-title"><a href=https://github.com/elliotdevstudio/Feedback-node-app target="_blank">FEEDBACK - A replica of Facebook's 'comment' feature</a></h3>
-          </div>
-          <div class="project-description-container">
-            <p class="description-text">This application runs on a Node server using REST architecture, and leverages more advanced tools and functionality of the Express.js framework, such as user authorization through session logging and bcrypt for password hashing. It uses middleware protected routes, connects to an external MongoDB atlas database, Mongoose for an ODM, is rendered with EJS (extended javascript) templates, and styled using Bulma and custom CSS. This app essentially allows users to post text blocks on a chronological feed that anyone who is logged in can post comments to, and is CRUD functional. 
+            <p class="description-text">This collaborative hackathon was hosted by General Assembly in May 2023, with a theme of 'Digital Equity and Accessiblity'. Our team of two developers and two UX/UI designers determined that the ubiquity and affordability of mobile smart devices opened some ground for exploring ideas, and with guidance of publicly available peer-reviewed research we concluded that our product should aim to assist individuals facing significant economic or housing challenges. To effectively manage the extensive range of desired components and functionalities, we focused on developing a minimum viable product (MVP) that included user authorization, a basic profile screen allowing users to create personal profiles, and a landing page featuring publicly accessible routes to various resources generated during our brainstorming sessions. For a few other additional endpoints that fell outside the scope of our project, we created mock-ups for presentation purposes, incorporating user interactions such as drop-down menus and basic animations. Our team was one of the smallest groups, after half of the initial participants needed to disengage. This was a great experience that challenged us on a professional level.
             </br></br>
-            <strong>Technologies used:&nbsp;&nbsp;</strong>Node.js, Express, MongoDB, SASS, HTML5</p>
+              <strong>Technologies used:&nbsp;&nbsp;</strong>Express.js, React.js, MongoDB, Netlify, CSS modules, HTML</p>
+            </div>
+          </div>
+          <div class="image-container no-scroll">
+            <img class="project-image" src="assets/images/Figtree-1.png"/>
+            <img class="project-image" src="assets/images/Figtree-login.png"/>
+            <img class="project-image" src="assets/images/Figtree-map.png"/>
           </div>
         </div>
-        <div class="image-container no-scroll">
-          <img class="project-image" src="assets/images/Feedback-screenshot.png"/>
-        </div>
-      </div>
-    </br>
-    </br>
-    <hr style="width:100%; height:.5px; background-color:#c7c7c7">
-    </br> 
-    </br>
-      <div class="project-card fade-in">
-        <div class="project-description">
-          <div title="project-title-container">
-            <h3 class="project-title"><a href=https://github.com/elliotdevstudio/exploria-app-1 target="_blank">EXPLORIA - travel interest site </a></h3>
+        </br>
+        </br>
+        <hr style="width:100%; height:.5px; background-color:#c7c7c7"> 
+        </br>
+        </br> 
+        
+        <div class="project-card fade-in">
+          <div class="project-description">
+            <div title="project-title-container">
+              <h3 class="project-title"><a href=https://github.com/elliotdevstudio/Feedback-node-app target="_blank">FEEDBACK - A replica of Facebook's 'comment' feature</a></h3>
+            </div>
+            <div class="project-description-container">
+              <p class="description-text">This application runs on a Node server using REST architecture, and leverages more advanced tools and functionality of the Express.js framework, such as user authorization through session logging and bcrypt for password hashing. It uses middleware protected routes, connects to an external MongoDB atlas database, Mongoose for an ODM, is rendered with EJS (extended javascript) templates, and styled using Bulma and custom CSS. This app essentially allows users to post text blocks on a chronological feed that anyone who is logged in can post comments to, and is CRUD functional. 
+              </br>
+              </br>
+              <strong>Technologies used:&nbsp;&nbsp;</strong>Node.js, Express, MongoDB, SASS, HTML5</p>
+            </div>
           </div>
-          <div class="project-description-container">
-            <p class="description-text">This was a collaborative group project built with three classmates, where we simulated a real-world scenario of working with a client—our instructor acting in this role. We engaged in organized, thoughtful discussions to fully understand their overarching goals. Given vague initial prompts, our team brainstormed and prepared questions for two follow-up meetings, which ultimately clarified the project’s concept and user journey. The client sought a travel and interest application that would allow users to create profiles, make posts, and share images to foster community engagement around public art installations in their cities. The project was developed using Django, a relational database, and customized Bootstrap through experimental CSS. It also implemented user authentication, full CRUD functionality, and RESTful routing.  </br></br>
-              <strong>Technologies used:&nbsp;&nbsp;</strong>Django, Bootstrap, SASS, HTML5, Heroku</p>
+          <div class="image-container no-scroll">
+            <img class="project-image" src="assets/images/Feedback-screenshot.png"/>
           </div>
         </div>
-        <div class="image-container no-scroll">
-          <img class="project-image" src="assets/images/Exploria.png"/>
-        </div>
-      </div>
+      </br>
+      </br>
+      <hr style="width:100%; height:.5px; background-color:#c7c7c7">
       </br> 
       </br>
-    
     </section>
   </main>
   <footer class="contact-section">    
